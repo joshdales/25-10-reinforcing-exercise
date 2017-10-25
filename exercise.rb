@@ -7,5 +7,7 @@ data = [
 
 data.each do |d|
   puts "\n#{d[:city]} \n ------------"
-
+  d[:events].each do |event|
+    puts "Date: #{event[:date]}, #{event[:attendees]} people"
+  end
 end
